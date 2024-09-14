@@ -10,11 +10,13 @@ async function initMap() {
 
     const map = new Map(document.getElementById("map-container"), {
         zoom: 15,
+        maxZoom: 14,
         center: {
             lat: 45.76,
             lng: 4.835
         },
         mapId: 'default',
+        behaviour: 'Greedy'
     });
 
     restaurantsList.value.forEach((restuarant) => {
