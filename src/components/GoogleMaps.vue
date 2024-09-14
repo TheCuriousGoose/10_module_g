@@ -10,13 +10,22 @@ async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
+    let position = {
+        lat: 45.76,
+        lng: 4.835
+    };
+
+    if (props.restaurant != null) {
+        position = {
+            lat: props.restaurant.latitude,
+            lng: props.restaurant.longitude
+        }
+    }
+
     const map = new Map(document.getElementById("map-container"), {
         zoom: 15,
         maxZoom: 14,
-        center: {
-            lat: 45.76,
-            lng: 4.835
-        },
+        center: position,
         mapId: 'default',
         behaviour: 'Greedy'
     });
