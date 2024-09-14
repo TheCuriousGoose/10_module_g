@@ -1,6 +1,6 @@
 import { ref } from "vue";
 
-/** @type {{id: number, name: string, short_description: string, content: string, images: string[], rating: number, location_name: string, latitude: number, longitude: number}[]} */
+/** @type {{id: number, name: string, short_description: string, content: string, images: string[], rating: number, location_name: string, latitude: number, longitude: number, categories: string[]}[]} */
 const _restaurants = [
   {
     id: 1,
@@ -17,6 +17,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7597,
     longitude: 4.8426,
+    categories: ["Lyonnais", "Bouchon", "Traditional"],
   },
   {
     id: 2,
@@ -33,6 +34,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.758,
     longitude: 4.8357,
+    categories: ["French", "Modern", "Elegant"],
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7582,
     longitude: 4.8325,
+    categories: ["Michelin-starred", "French", "Gourmet"],
   },
   {
     id: 4,
@@ -65,6 +68,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7579,
     longitude: 4.8314,
+    categories: ["Wine", "Gourmet", "Casual"],
   },
   {
     id: 5,
@@ -81,6 +85,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7622,
     longitude: 4.8415,
+    categories: ["Upscale", "Seasonal", "Local"],
   },
   {
     id: 6,
@@ -97,6 +102,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.759,
     longitude: 4.8422,
+    categories: ["Brasserie", "French", "Traditional"],
   },
   {
     id: 7,
@@ -113,6 +119,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.764,
     longitude: 4.8357,
+    categories: ["Café", "Pastries", "Light Meals"],
   },
   {
     id: 8,
@@ -129,6 +136,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7593,
     longitude: 4.8326,
+    categories: ["Bistro", "French", "Inventive"],
   },
   {
     id: 9,
@@ -145,6 +153,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7608,
     longitude: 4.8321,
+    categories: ["Mediterranean", "Fresh", "Seasonal"],
   },
   {
     id: 10,
@@ -161,6 +170,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7567,
     longitude: 4.8387,
+    categories: ["Lyonnais", "Bouchon", "Traditional"],
   },
   {
     id: 11,
@@ -177,6 +187,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7575,
     longitude: 4.8351,
+    categories: ["Bistro", "Comfort Food", "French"],
   },
   {
     id: 12,
@@ -193,6 +204,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7584,
     longitude: 4.8395,
+    categories: ["Modern", "French", "Innovative"],
   },
   {
     id: 13,
@@ -209,6 +221,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7612,
     longitude: 4.8368,
+    categories: ["Bistro", "French", "Hearty"],
   },
   {
     id: 14,
@@ -225,6 +238,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.7628,
     longitude: 4.8372,
+    categories: ["Elegant", "Outdoor", "French"],
   },
   {
     id: 15,
@@ -241,6 +255,7 @@ const _restaurants = [
     location_name: "Lyon",
     latitude: 45.755,
     longitude: 4.8378,
+    categories: ["Traditional", "French", "Classic"],
   },
 ];
 
