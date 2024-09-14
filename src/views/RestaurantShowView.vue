@@ -4,20 +4,14 @@ import { computed, watch } from "vue";
 import { useRoute } from "vue-router";
 
 const route = useRoute();
-const restaurant = computed(() => restaurants.value);
-const load = () => {
-  restaurant.value;
-};
-
-watch(
-  () => route.params,
-  () => load(),
-  { immediate: true, deep: true }
+const restaurant = computed(() =>
+  restaurants.value.find((x) => x.id === route.params.id)
 );
 </script>
 
 <template>
-  <h1></h1>
+  <h1>{{ restaurant.name }}</h1>
+  <p>{{ restaurant.short_description }}</p>
 </template>
 
 <style scoped></style>
