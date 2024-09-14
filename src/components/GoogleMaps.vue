@@ -4,6 +4,8 @@ import { restaurants } from '@/utils/store'
 
 const restaurantsList = restaurants;
 
+const props = defineProps({ restaurant: Object });
+
 async function initMap() {
     const { Map } = await google.maps.importLibrary("maps");
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
@@ -19,16 +21,28 @@ async function initMap() {
         behaviour: 'Greedy'
     });
 
-    restaurantsList.value.forEach((restuarant) => {
+    if (props.restaurant != null) {
         const marker = new AdvancedMarkerElement({
             map: map,
             position: {
-                lat: restuarant.latitude,
-                lng: restuarant.longitude
+                lat: props.restaurant.latitude,
+                lng: props.restaurant.longitude
             },
-            title: restuarant.name
+            title: props.restaurant.name
         })
-    })
+    } else {
+        restaurantsList.value.forEach((restuarant) => {
+            const marker = new AdvancedMarkerElement({
+                map: map,
+                position: {
+                    lat: restuarant.latitude,
+                    lng: restuarant.longitude
+                },
+                title: restuarant.name
+            })
+        })
+    }
+
 }
 
 onMounted(async () => {
