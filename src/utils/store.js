@@ -61,9 +61,10 @@ const _restaurants = [
     content:
       "Perfect for wine lovers and those looking to enjoy sophisticated small plates in a relaxed setting.",
     images: [
-      "https://media.lovefood.com/images/83363/original/les-fines-gueules-restaurant.jpg",
-      "https://media.lovefood.com/images/83362/original/les-fines-gueules-restaurant-interior.jpg"
-    ],
+    "https://media-cdn.tripadvisor.com/media/photo-s/03/f4/23/d8/facade-rue-lainerie-fines.jpg",
+    "https://media-cdn.tripadvisor.com/media/photo-s/04/97/8c/50/les-fines-gueules.jpg"  
+  ],
+
     rating: 4.4,
     location_name: "Lyon",
     latitude: 45.7579,
@@ -78,8 +79,8 @@ const _restaurants = [
     content:
       "Offers an elegant dining experience with dishes made from fresh, seasonal ingredients sourced locally.",
     images: [
-      "https://media.lovefood.com/images/83364/original/le-gourmet-de-seze-restaurant.jpg",
-      "https://media.lovefood.com/images/83365/original/le-gourmet-de-seze-dishes.jpg"
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/8b/7c/e0/la-salle-du-gourmet-de.jpg?w=1400&h=-1&s=1",
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/13/8b/7c/63/jardin-du-gourmet-fraises.jpg?w=1200&h=-1&s=1"
     ],
     rating: 4.6,
     location_name: "Lyon",
@@ -95,8 +96,8 @@ const _restaurants = [
     content:
       "A traditional brasserie known for its hearty French dishes and lively atmosphere.",
     images: [
-      "https://media.lovefood.com/images/83366/original/brasserie-georges-restaurant.jpg",
-      "https://media.lovefood.com/images/83367/original/brasserie-georges-interior.jpg"
+      "https://www.brasseriegeorges.com/wp-content/uploads/2017/06/fb-share-brasserie-georges.jpg",
+        "https://thisislyon.fr/wp-content/uploads/2017/02/food-in-lyon-Brasserie-Georges.jpg"
     ],
     rating: 4.3,
     location_name: "Lyon",
@@ -112,8 +113,8 @@ const _restaurants = [
     content:
       "A great spot for breakfast or a casual lunch, featuring freshly baked pastries and quality coffee.",
     images: [
-      "https://media.lovefood.com/images/83368/original/cafe-du-soleil-restaurant.jpg",
-      "https://media.lovefood.com/images/83369/original/cafe-du-soleil-coffee.jpg"
+      "https://www.lesquenellesdusoleil.fr/wp-content/uploads/2019/05/Actu_Histoire_du_cafe_du_soleil_Quenelles-du-soleil.jpg",
+      "https://media-cdn.tripadvisor.com/media/photo-s/09/f6/0a/13/cafe-restaurant-du-soleil.jpg"
     ],
     rating: 4.2,
     location_name: "Lyon",
@@ -129,8 +130,8 @@ const _restaurants = [
     content:
       "Known for its creative dishes and welcoming atmosphere, perfect for a relaxed dining experience.",
     images: [
-      "https://media.lovefood.com/images/83370/original/l-ourson-qui-boit-restaurant.jpg",
-      "https://media.lovefood.com/images/83371/original/l-ourson-qui-boit-dishes.jpg"
+      "https://secure.geo-like.com/_cache/resize/800-600.ratio/850eccd14eab091f0b3c4acae875ddbd.jpg",
+      "https://mesdelices.fr/wp-content/uploads/2019/02/entr%C3%A9e-lourson-qui-boit-680x510.jpg"
     ],
     rating: 4.5,
     location_name: "Lyon",
@@ -146,8 +147,8 @@ const _restaurants = [
     content:
       "Offers a Mediterranean dining experience with a menu that highlights fresh, seasonal ingredients.",
     images: [
-      "https://media.lovefood.com/images/83372/original/le-sud-restaurant.jpg",
-      "https://media.lovefood.com/images/83373/original/le-sud-dishes.jpg"
+      "https://media-cdn.tripadvisor.com/media/photo-s/29/a7/2f/d5/brasserie-bocuse-le-sud.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3xJ43Wv-Vj0DSm2A9Rlo1Qsl3TBUyYJtT_A&s"
     ],
     rating: 4.4,
     location_name: "Lyon",
@@ -163,8 +164,8 @@ const _restaurants = [
     content:
       "A true bouchon experience, serving classic Lyonnais dishes in a casual and friendly setting.",
     images: [
-      "https://media.lovefood.com/images/83374/original/le-bouchon-des-filles-restaurant.jpg",
-      "https://media.lovefood.com/images/83375/original/le-bouchon-des-filles-interior.jpg"
+      "https://lebouchondesfilles.fr/wp-content/uploads/2021/06/DSC_5486-scaled.jpg",
+      "https://lebouchondesfilles.fr/wp-content/uploads/2021/07/restaurant.6cb10b3a79b9-1.jpg"
     ],
     rating: 4.6,
     location_name: "Lyon",
@@ -180,8 +181,8 @@ const _restaurants = [
     content:
       "A quaint bistro offering comforting French dishes in a cozy, intimate setting.",
     images: [
-      "https://media.lovefood.com/images/83376/original/le-petit-bec-restaurant.jpg",
-      "https://media.lovefood.com/images/83377/original/le-petit-bec-dishes.jpg"
+      "https://www.lyonresto.com/contenu/photo_restaurant/0_photo_automatique_big/rue_le_bec/2_Rue_Le_Bec_salle.jpg",
+      "https://www.lyonresto.com/contenu/photo_restaurant/0_photo_automatique_big/rue_le_bec/52_Rue_Le_bec_terrasse.jpg"
     ],
     rating: 4.3,
     location_name: "Lyon",
@@ -197,8 +198,8 @@ const _restaurants = [
     content:
       "Provides a modern take on French cuisine with an emphasis on creativity and high-quality ingredients.",
     images: [
-      "https://media.lovefood.com/images/83378/original/la-table-d-eugene-restaurant.jpg",
-      "https://media.lovefood.com/images/83379/original/la-table-d-eugene-dishes.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgbX2_gXahckXXynzrZdKASzAX6E3s4bVzzg&s",
+     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRA7zB-NAIu8ZHVqp0lQePG5WbusQf_GRkU2A&s"
     ],
     rating: 4.8,
     location_name: "Lyon",
@@ -214,8 +215,8 @@ const _restaurants = [
     content:
       "Offers a relaxed environment with a menu featuring hearty and flavorful French classics.",
     images: [
-      "https://media.lovefood.com/images/83380/original/bistro-de-la-montee-restaurant.jpg",
-      "https://media.lovefood.com/images/83381/original/bistro-de-la-montee-dishes.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn-ioORvZLm4J0vowtSbQAMeE08mwnKjqrlg&s",
+      "https://media-cdn.tripadvisor.com/media/photo-s/08/01/83/ed/au-bistrot-de-la-montagne.jpg"
     ],
     rating: 4.2,
     location_name: "Lyon",
@@ -231,8 +232,8 @@ const _restaurants = [
     content:
       "Features a lovely outdoor patio and a diverse menu that blends classic and contemporary French cuisine.",
     images: [
-      "https://media.lovefood.com/images/83382/original/le-patio-restaurant.jpg",
-      "https://media.lovefood.com/images/83383/original/le-patio-outdoor.jpg"
+      "https://media-cdn.tripadvisor.com/media/photo-s/2a/6d/da/9e/veranda.jpg",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrK6LocULI6v_QFD5dLfUDXhXYMHozhl4Sig&s"
     ],
     rating: 4.7,
     location_name: "Lyon",
@@ -248,8 +249,9 @@ const _restaurants = [
     content:
       "A classic French restaurant known for its traditional dishes and welcoming atmosphere.",
     images: [
-      "https://media.lovefood.com/images/83384/original/chez-paul-restaurant.jpg",
-      "https://media.lovefood.com/images/83385/original/chez-paul-dishes.jpg"
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhPFLYjWF0x1YSDkXjuiN-e7aRAlnN22BFBw&s",
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZSDR0NwkXO_cXQJOGVC7ZeGYRnUscs8VAqA&s"
+
     ],
     rating: 4.5,
     location_name: "Lyon",
