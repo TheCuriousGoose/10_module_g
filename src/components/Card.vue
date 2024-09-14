@@ -1,5 +1,6 @@
 <template>
-    <div class="da relative flex flex-col justify-center overflow-hidden">
+    <RouterLink class="da relative flex flex-col justify-center overflow-hidden"
+        :to="{ name: 'show', params: { id: restaurant.id } }">
         <div class="absolute inset-0 bg-center"></div>
         <div class="group relative m-0 flex h-72 w-96 rounded-xl shadow-xl ring-gray-900/5 sm:mx-auto sm:max-w-lg">
             <div
@@ -18,10 +19,12 @@
                 </h1>
             </div>
         </div>
-    </div>
+    </RouterLink>
 </template>
   
 <script setup>
+import { RouterLink } from 'vue-router';
+
 const props = defineProps({
     restaurant: {
         type: Object,
