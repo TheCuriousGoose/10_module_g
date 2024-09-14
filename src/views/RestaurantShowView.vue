@@ -1,4 +1,5 @@
 <script setup>
+import GoogleMaps from "@/components/GoogleMaps.vue";
 import { restaurants } from "@/utils/store";
 import { computed, onMounted, watch } from "vue";
 import { useRoute } from "vue-router";
@@ -30,57 +31,64 @@ const restaurant = computed(() =>
   </div> -->
 
   <div class="container mx-auto p-5">
-    <div class="bg-white shadow-md rounded-lg p-6">
-      <h1 class="text-2xl font-bold mb-4">Item Details</h1>
-      <p>
-        <strong>ID:</strong> <span id="id">{{ restaurant.id }}</span>
-      </p>
-      <p>
-        <strong>Name:</strong> <span id="name">{{ restaurant.name }}</span>
-      </p>
-      <p>
-        <strong>Short Description:</strong>
-        <span id="short_description">{{ restaurant.short_description }}</span>
-      </p>
-      <p>
-        <strong>Content:</strong>
-        <span id="content">{{ restaurant.content }}</span>
-      </p>
+    <div class="flex bg-white shadow-lg rounded-lg p-6">
+      <div>
+        <h1 class="text-3xl font-bold mb-4 text-center text-blue-600">
+          {{ restaurant.name }}
+        </h1>
+        <p class="text-gray-700"><strong>ID:</strong> {{ restaurant.id }}</p>
+        <p class="text-gray-700">
+          <strong>Short Description:</strong> {{ restaurant.short_description }}
+        </p>
+        <p class="text-gray-700">
+          <strong>Content:</strong> {{ restaurant.content }}
+        </p>
 
-      <h2 class="text-xl font-semibold mt-4">Images</h2>
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
-        <img
-          v-for="image in restaurant.images"
-          :src="image"
-          :alt="restaurant.name"
-          class="rounded"
-        />
+        <h2 class="text-2xl font-semibold mt-4">Images</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-2">
+          <img
+            v-for="image in restaurant.images"
+            :src="image"
+            :alt="'Image ' + (restaurant.images.indexOf(image) + 1)"
+            class="rounded shadow-md"
+          />
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-4">Rating</h2>
+        <div class="rating">
+          <span
+            v-for="star in 5"
+            :key="star"
+            :class="{
+              'text-gold': star <= restaurant.rating,
+              'text-gray-300': star > restaurant.rating,
+            }"
+            >★</span
+          >
+          <span class="ml-2">({{ restaurant.rating }})</span>
+        </div>
+
+        <h2 class="text-2xl font-semibold mt-4">Location</h2>
+        <p class="text-gray-700">
+          <strong>Location Name:</strong> {{ restaurant.location_name }}
+        </p>
+        <p class="text-gray-700">
+          <strong>Latitude:</strong> {{ restaurant.latitude }}
+        </p>
+        <p class="text-gray-700">
+          <strong>Longitude:</strong> {{ restaurant.longitude }}
+        </p>
+
+        <h2 class="text-2xl font-semibold mt-4">Categories</h2>
+        <ul class="list-disc pl-5">
+          <li v-for="category in restaurant.categories" :key="category">
+            {{ category }}
+          </li>
+        </ul>
       </div>
-
-      <h2 class="text-xl font-semibold mt-4">Rating</h2>
-      <div class="rating">
-        <span>⭐⭐⭐⭐⭐</span>
-        <span>({{ restaurant.rating }})</span>
+      <div>
+        <GoogleMaps></GoogleMaps>
       </div>
-
-      <h2 class="text-xl font-semibold mt-4">Location</h2>
-      <p>
-        <strong>Location Name:</strong>
-        <span id="location_name">{{ restaurant.location_name }}</span>
-      </p>
-      <p>
-        <strong>Latitude:</strong>
-        <span id="latitude">{{ restaurant.latitude }}</span>
-      </p>
-      <p>
-        <strong>Longitude:</strong>
-        <span id="longitude">{{ restaurant.longitude }}</span>
-      </p>
-
-      <h2 class="text-xl font-semibold mt-4">Categories</h2>
-      <ul id="categories" class="list-disc pl-5">
-        <li v-for="category in restaurant.categories">{{ category }}</li>
-      </ul>
     </div>
   </div>
 </template>
